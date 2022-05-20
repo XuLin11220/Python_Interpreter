@@ -11,6 +11,7 @@ class Interpreter:
         while True:
             # read and store it into curr_token
             self.curr_token = self.file_text.next_token()
+            # if it's end of file, it means nothing to read, end of program.
             if self.curr_token['type'] == 'EOF':
                 break
             if self.curr_token['type'] == 'Identifier':
