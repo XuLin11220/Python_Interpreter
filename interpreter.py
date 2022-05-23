@@ -1,4 +1,3 @@
-from cgitb import reset
 from tokenizer import Tokenizer
 
 class Interpreter:
